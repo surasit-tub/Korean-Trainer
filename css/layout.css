@@ -1,0 +1,70 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial;
+    max-width:var(--boby-max-width);
+
+    margin:0 auto;
+    padding:10px;
+
+    box-sizing:border-box;
+}
+
+.card-wrapper{
+    position:relative;
+	width:100%;
+}
+
+.table-wrapper {
+  overflow-y: auto;
+  border: 0px solid #ccc;
+  
+  display:none;
+  
+  position: relative;
+  z-index: 1;
+	
+}
+
+.control-panel{
+    width:100%;
+}
+
+.word-line{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+}
+
+.answer-placeholder{
+
+    width:var(--answer-placeholder-width);
+    height:var(--answer-placeholder-height);
+
+    margin:20px auto;
+
+    border-radius:15px;
+
+    backdrop-filter:blur(8px);
+
+    background:
+        repeating-linear-gradient(
+            45deg,
+            #f4f4f4 0,
+            #f4f4f4 12px,
+            #ffffff 12px,
+            #ffffff 24px
+        );
+
+    border:0px solid #ddd;	
+
+}
+
+.hidden{
+    display:none;
+}

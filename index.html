@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="th">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ภาษาเกาหลีใกล้ฉัน - Korean Trainer</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/data_vocab.js" defer></script>
+    <script src="js/data_dialog.js" defer></script>
+    <script src="js/datasets.js" defer></script>
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+
+    <header class="control-panel">
+        <div class="button-bar">
+            <button id="languageBtn" aria-label="เปลี่ยนภาษา">
+                <span id="languageText">
+                    <span class="cn">가</span>
+                    <span class="arrow">→</span>
+                    <span class="th">ก</span>
+                </span>
+            </button>
+
+            <button id="studyModeBtn" aria-label="โหมดการเรียน">
+                <i id="studyModeIcon" class="fa-solid fa-chalkboard"></i>
+            </button>
+
+            <button id="speakerBtn" aria-label="เปิด/ปิดเสียง">
+                <span class="fa-stack">
+                    <i class="fa-solid fa-volume-high fa-stack-1x"></i>
+                    <i id="speakerSlash" class="fa-solid fa-slash fa-stack-1x hidden"></i>
+                </span>
+            </button>   
+        </div>
+
+        <div class="selector-bar">
+            <select id="category">
+                <option value="">-- เลือกหมวดหมู่ --</option>
+            </select>
+        </div>
+		<div class="selector-bar">
+            <select id="lesson">
+                <option value="">-- เลือกบทเรียน --</option>
+            </select>
+        </div>
+
+        <div class="button-bar">    
+            <button id="shuffleBtn" aria-label="สลับคำศัพท์">
+                <i id="shuffleIcon" class="fa-solid fa-list-ol"></i>
+            </button>
+
+            <button id="answerModeBtn" aria-label="เปิด/ปิดคำแปล">
+                <span class="fa-stack">
+                    <i class="fa-regular fa-closed-captioning fa-stack-1x"></i>
+                    <i id="answerSlash" class="fa-solid fa-slash fa-stack-1x hidden"></i>
+                </span>
+            </button>
+            
+            <button id="displayModeBtn" aria-label="เปลี่ยนโหมดการแสดงผล"> 
+                <i id="displayModeIcon" class="fa-solid fa-laptop-code"></i>
+            </button>
+            
+            <button id="autoBtn" aria-label="เล่นอัตโนมัติ">
+                <i id="autoIcon" class="fa-solid fa-play"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="card-wrapper">
+
+		<button id="prevBtn" class="nav-btn left" aria-label="ก่อนหน้า">
+			<i class="fa-solid fa-chevron-left"></i>
+		</button>
+		
+		<div id="card" class="card"></div>
+
+		<button id="nextBtn" class="nav-btn right" aria-label="ถัดไป">
+			<i class="fa-solid fa-chevron-right"></i>
+		</button>
+		
+		<div class="info-bar">
+			<div class="info" id="info"></div>
+		</div>
+
+	</main>
+
+    <section class="table-wrapper">
+        <table id="wordTable">             
+            <tbody>
+                </tbody>
+        </table>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+.info {
+	font-size:30px;
+	margin-bottom: 4px;
+}
+
+.info-bar, .info {
+    position: relative;
+    z-index: 5; /* อยู่ต่ำกว่าการ์ด จะได้ไม่บัง */
+    pointer-events: none; /* ปล่อยให้แรงกดทะลุผ่านกล่องข้อความนี้ไปโดนการ์ดได้ */
+	text-align: center;
+}
+
+#card {
+	
+	user-select: none; 
+    -webkit-user-select: none;
+	
+    position: relative;
+    z-index: 10;
+    pointer-events: auto !important; /* มั่นใจว่าเปิดรับการกด */
+	cursor: default;
+}
+
+.card{
+	width: 100%;
+	min-height:300px;
+	box-sizing:border-box;
+	
+	position: relative;
+	
+	background:white;
+
+    border-radius:16px;
+
+	box-shadow:0 8px 20px rgba(0,0,0,.15);
+	
+	transition: all .2s ease;
+	
+	animation:fadeIn .2s;
+	
+	padding: 20px;
+	margin-bottom: 4px;
+	
+	display:flex;
+    flex-direction:column;
+    justify-content:center;   /* จัดกึ่งกลางแนวตั้ง */
+	
+}
+
+.card:hover{
+    box-shadow:0 12px 30px rgba(0,0,0,.2);
+}
+
+.card:active{
+    transform:scale(.98);
+}
+
+/* Vocab */
+.card.vocab{	
+    text-align:center !important;
+}
+
+.card.vocab .chinese{
+    font-size:var(--card-vocab-chinese-font-size);
+}
+
+.card.vocab .pinyin{
+    font-size:var(--card-vocab-pinyin-font-size);
+    color:#333;
+}
+
+.card.vocab .thaiRead{
+    font-size:var(--card-vocab-thaiRead-font-size);
+    color:#0066cc;
+}
+
+.card.vocab .meaning{
+    font-size:var(--card-vocab-meaning-font-size);
+    color:#cc0000;
+}
+
+/* Dialog */
+.card.dialog{
+    text-align:left !important;
+    line-height:1.6;
+}
+
+.card.dialog .chinese{
+    font-size:50px;
+}
+
+.card.dialog .pinyin{
+    font-size:30px;
+    color:#333;
+}
+
+.card.dialog .thaiRead{
+    font-size:30px;
+    color:#0066cc;
+}
+
+.card.dialog .meaning{
+    font-size:30px;
+    color:#cc0000;
+}
+
+#clickable-answer-area,          /* โซนคำตอบทั้งหมด */
+.speak-btn,                     /* ปุ่มลำโพงบนการ์ด */
+.speak-btn-table,               /* ปุ่มลำโพงในตาราง */
+.answer-placeholder,            /* โซนแตะเพื่อดูคำแปล */
+button,                         /* ปุ่มอื่นๆ ทั้งหมด */
+select {                        /* ช่องเลือกหมวด/บทเรียน */
+    cursor: pointer;
+}
+

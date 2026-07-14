@@ -1,0 +1,93 @@
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+td{
+    padding:4px;
+    border-bottom:1px solid #ddd;
+}
+
+tr:nth-child(even){
+    background:#f8f8f8;
+}
+
+.active-row {
+    background-color: #e3f2fd !important;
+    transition: background-color 0.3s;
+}
+
+
+.vocab-row td{
+    vertical-align:middle;
+}
+
+.vocab-cn{
+    width:30%;
+    font-size:var(--table-vocab-chinese-font-size);
+    color:#222;
+}
+
+.vocab-speaker {
+	width:10%;
+}
+
+.vocab-pinyin{
+    width:20%;
+    font-size:var(--table-vocab-pinyin-font-size);
+    color:#666;
+}
+
+.vocab-read{
+    width:20%;
+    font-size:var(--table-vocab-thaiRead-font-size);
+    color:#1e88e5;      /* ฟ้า */
+}
+
+.vocab-th{
+    width:20%;
+    font-size:var(--table-vocab-meaning-font-size);
+    color:#d32f2f;      /* แดง */
+}
+
+.dialog-item{
+    padding:4px;
+}
+
+.dialog-title{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+
+}
+
+.dialog-cn{
+    font-size:var(--table-dialog-chinese-font-size);
+    color:#222;
+}
+
+.dialog-pinyin{
+    font-size:var(--table-dialog-pinyin-font-size);
+    color:#666;
+}
+
+.dialog-read{
+
+    font-size:var(--table-dialog-thaiRead-font-size);
+    color:#1e88e5;      /* ฟ้า */    
+}
+
+.dialog-th{
+
+    font-size:var(--table-dialog-meaning-font-size);
+    color:#d32f2f;      /* แดง */
+}
+
+#wordTable{
+
+    animation:fadeIn .2s;
+
+}
+
