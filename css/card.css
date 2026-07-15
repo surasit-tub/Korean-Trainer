@@ -1,6 +1,6 @@
 .info {
-	font-size:30px;
-	margin-bottom: 4px;
+	font-size:var(--info-font-size);	
+	margin-top: 10px;
 }
 
 .info-bar, .info {
@@ -8,6 +8,8 @@
     z-index: 5; /* อยู่ต่ำกว่าการ์ด จะได้ไม่บัง */
     pointer-events: none; /* ปล่อยให้แรงกดทะลุผ่านกล่องข้อความนี้ไปโดนการ์ดได้ */
 	text-align: center;
+	
+	
 }
 
 #card {
@@ -18,7 +20,7 @@
     position: relative;
     z-index: 10;
     pointer-events: auto !important; /* มั่นใจว่าเปิดรับการกด */
-	cursor: default;
+	cursor: default;	
 }
 
 .card{

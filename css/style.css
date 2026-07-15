@@ -1,48 +1,6 @@
+@import url("responsive.css");
 @import url("layout.css");
 @import url("button.css");
 @import url("card.css");
 @import url("table.css");
 @import url("animation.css");
-
-:root{
-
-	--boby-max-width: 100%;
-		
-	--button-bar-font-size: 30px;
-	
-	--select-font-size : 30px;
-	
-	--button-nav-font-size: 30px;
-	--button-nav-width: 60px;
-	--button-nav-height: 60px;
-	
-	--button-speaker-font-size : 20px;
-	
-	/* disply mode = card */
-	
-	--card-vocab-chinese-font-size : 50px;
-	--card-vocab-pinyin-font-size : 30px;
-	--card-vocab-thaiRead-font-size : 30px;
-	--card-vocab-meaning-font-size : 30px;
-	
-	--card-dialog-chinese-font-size : 50px;
-	--card-dialog-pinyin-font-size : 30px;
-	--card-dialog-thaiRead-font-size : 30px;
-	--card-dialog-meaning-font-size : 30px;
-	
-	/* disply mode = table */
-	
-	--table-vocab-chinese-font-size : 40px;
-	--table-vocab-pinyin-font-size : 20px;
-	--table-vocab-thaiRead-font-size : 20px;
-	--table-vocab-meaning-font-size : 20px;
-	
-	--table-dialog-chinese-font-size : 40px;
-	--table-dialog-pinyin-font-size : 20px;
-	--table-dialog-thaiRead-font-size : 20px;
-	--table-dialog-meaning-font-size : 20px;
-	
-	--answer-placeholder-width : 50%;
-	--answer-placeholder-height: 100px;
-			
-}
