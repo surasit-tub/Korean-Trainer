@@ -86,21 +86,21 @@
 }
 
 .card.dialog .chinese{
-    font-size:50px;
+    font-size:var(--card-dialog-chinese-font-size);
 }
 
 .card.dialog .pinyin{
-    font-size:30px;
+    font-size:var(--card-dialog-pinyin-font-size);
     color:#333;
 }
 
 .card.dialog .thaiRead{
-    font-size:30px;
+    font-size:var(--card-dialog-thaiRead-font-size);
     color:#0066cc;
 }
 
 .card.dialog .meaning{
-    font-size:30px;
+    font-size:var(--card-dialog-meaning-font-size);
     color:#cc0000;
 }
 
