@@ -52,7 +52,7 @@
 
 
 /* Tablet */
-@media (orientation: portrait) and (min-width: 768px) {
+@media (orientation: portrait) and (max-width: 450px) {
 
     :root{
 
@@ -111,8 +111,8 @@
 
 /* Desktop */
 @media 
-(orientation: landscape) 
-or ((orientation: portrait) and (min-width: 768px) )
+((orientation: portrait) and (min-width: 451px))
+or (orientation: landscape) 
 or (min-width: 1025px) 
 {
 
