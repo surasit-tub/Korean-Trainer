@@ -25,7 +25,7 @@
 
 .card{
 	width: 100%;
-	min-height:300px;
+	min-height: var(--card-min-height);
 	box-sizing:border-box;
 	
 	position: relative;
@@ -57,7 +57,27 @@
     transform:scale(.98);
 }
 
+/* ส่วนกลางที่ใช้ร่วมกันของทุกโหมด */
+.word-line {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+/* --- Mode Vocab: จัดกึ่งกลาง --- */
+.vocab-word-line {
+    justify-content: center; 
+    gap: 10px;               
+}
+
+/* --- Mode Dialog: คำซ้าย ปุ่มขวา --- */
+.dialog-word-line {
+    justify-content: space-between; 
+   
+}
+
 /* Vocab */
+
 .card.vocab{	
     text-align:center !important;
 }
@@ -106,12 +126,4 @@
     color:#cc0000;
 }
 
-#clickable-answer-area,          /* โซนคำตอบทั้งหมด */
-.speak-btn,                     /* ปุ่มลำโพงบนการ์ด */
-.speak-btn-table,               /* ปุ่มลำโพงในตาราง */
-.answer-placeholder,            /* โซนแตะเพื่อดูคำแปล */
-button,                         /* ปุ่มอื่นๆ ทั้งหมด */
-select {                        /* ช่องเลือกหมวด/บทเรียน */
-    cursor: pointer;
-}
 

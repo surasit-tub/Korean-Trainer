@@ -10,10 +10,15 @@
 	--button-nav-font-size: 30px;
 	--button-nav-width: 60px;
 	--button-nav-height: 60px;
+	--button-nav-border: 4px;
+	--button-nav-left : 4px;
+	--button-nav-right : 4px;
 	
 	--button-speaker-font-size : 20px;
 	
 	/* disply mode = card */
+	
+	--cared-min-height : 80svh;
 	
 	--card-vocab-chinese-font-size : 50px;
 	--card-vocab-pinyin-font-size : 30px;
@@ -47,7 +52,7 @@
 
 
 /* Tablet */
-@media (min-width:768px){
+@media (orientation: portrait) and (min-width: 768px) {
 
     :root{
 
@@ -60,10 +65,15 @@
 		--button-nav-font-size: 30px;
 		--button-nav-width: 60px;
 		--button-nav-height: 60px;
+		--button-nav-border: 4px;
+		--button-nav-left : 4px;
+		--button-nav-right : 4px;
 		
 		--button-speaker-font-size : 20px;
 		
 		/* disply mode = card */
+		
+		--cared-min-height : 80svh;
 		
 		--card-vocab-chinese-font-size : 50px;
 		--card-vocab-pinyin-font-size : 30px;
@@ -98,48 +108,53 @@
 }
 
 /* Desktop */
-@media (min-width:1200px){
+@media (min-width: 1025px) {
 
     :root{
 
 		--boby-max-width: 100%;
 		
-		--button-bar-font-size: 30px;
+		--button-bar-font-size: 35px;
 		
-		--select-font-size : 30px;
+		--select-font-size : 35px;
 		
-		--button-nav-font-size: 30px;
-		--button-nav-width: 60px;
-		--button-nav-height: 60px;
+		--button-nav-font-size: 50px;
+		--button-nav-width: 100px;		
+		--button-nav-height: 100px;
+		--button-nav-border: 8px;
+		--button-nav-left : 30px;
+		--button-nav-right : 30px;
 		
-		--button-speaker-font-size : 20px;
+		--button-speaker-font-size : 25px;
 		
 		/* disply mode = card */
 		
-		--card-vocab-chinese-font-size : 50px;
-		--card-vocab-pinyin-font-size : 30px;
-		--card-vocab-thaiRead-font-size : 30px;
-		--card-vocab-meaning-font-size : 30px;
+		--card-min-height : 60svh;
 		
-		--card-dialog-chinese-font-size : 50px;
-		--card-dialog-pinyin-font-size : 30px;
-		--card-dialog-thaiRead-font-size : 30px;
-		--card-dialog-meaning-font-size : 30px;
+		--card-vocab-chinese-font-size : 70px;
+		--card-vocab-pinyin-font-size : 50px;
+		--card-vocab-thaiRead-font-size : 50px;
+		--card-vocab-meaning-font-size : 50px;
+		
+		--card-dialog-chinese-font-size : 70px;
+		--card-dialog-pinyin-font-size : 50px;
+		--card-dialog-thaiRead-font-size : 50px;
+		--card-dialog-meaning-font-size : 50px;
 		
 		/* disply mode = table */
 		
-		--table-vocab-chinese-font-size : 40px;
-		--table-vocab-pinyin-font-size : 20px;
-		--table-vocab-thaiRead-font-size : 20px;
-		--table-vocab-meaning-font-size : 20px;
+		--table-vocab-chinese-font-size : 60px;
+		--table-vocab-pinyin-font-size : 40px;
+		--table-vocab-thaiRead-font-size : 40px;
+		--table-vocab-meaning-font-size : 40px;
 		
-		--table-dialog-chinese-font-size : 40px;
-		--table-dialog-pinyin-font-size : 20px;
-		--table-dialog-thaiRead-font-size : 20px;
-		--table-dialog-meaning-font-size : 20px;
+		--table-dialog-chinese-font-size : 60px;
+		--table-dialog-pinyin-font-size : 40px;
+		--table-dialog-thaiRead-font-size : 40px;
+		--table-dialog-meaning-font-size : 40px;
 		
 		--anawer-placeholder-width : 50%;
-		--answer-placeholder-height: 100px;
+		--answer-placeholder-height: 120px;
 
 		/* info */
 		--info-font-size : 30px;

@@ -34,13 +34,6 @@ body{
     width:100%;
 }
 
-.word-line{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:10px;
-}
-
 .answer-placeholder{
 
     width:var(--answer-placeholder-width);

@@ -275,25 +275,48 @@ function renderCard() {
 
     const isCt = languageMode === "ct";
     
-    card.innerHTML = `
-        <div class="word-line">
-            <div class="chinese">${isCt ? cur.c : cur.t}</div>
-            <button id="cardSpeakBtn" class="speak-btn">
-                <i class="fa-solid fa-volume-high"></i>
-            </button>
-        </div>
-        <div id="clickable-answer-area"> 
-            ${answerVisible ? `
-                <div class="answer-content">
-                    <div class="pinyin">${isCt ? cur.p : cur.r}</div>
-                    <div class="thaiRead">${isCt ? cur.r : cur.p}</div>
-                    <div class="meaning">${isCt ? cur.t : cur.c}</div>
-                </div>` : `
-                <div class="answer-placeholder">
-                    <div class="reveal-text"></div>
-                </div>`}
-        </div>
-    `;
+    if (studyMode === "vocab") {
+		card.innerHTML = `
+			<div class="word-line vocab-word-line">
+				<div class="chinese">${isCt ? cur.c : cur.t}</div>
+				<button id="cardSpeakBtn" class="speak-btn">
+					<i class="fa-solid fa-volume-high"></i>
+				</button>
+			</div>
+			<div id="clickable-answer-area"> 
+				${answerVisible ? `
+					<div class="answer-content">
+						<div class="pinyin">${isCt ? cur.p : cur.r}</div>
+						<div class="thaiRead">${isCt ? cur.r : cur.p}</div>
+						<div class="meaning">${isCt ? cur.t : cur.c}</div>
+					</div>` : `
+					<div class="answer-placeholder">
+						<div class="reveal-text"></div>
+					</div>`}
+			</div>
+		`;
+	} else {
+		card.innerHTML = `
+			<div class="word-line dialog-word-line">
+				<div class="chinese">${isCt ? cur.c : cur.t}</div>
+				<button id="cardSpeakBtn" class="speak-btn">
+					<i class="fa-solid fa-volume-high"></i>
+				</button>
+			</div>
+			<div id="clickable-answer-area"> 
+				${answerVisible ? `
+					<div class="answer-content">
+						<div class="pinyin">${isCt ? cur.p : cur.r}</div>
+						<div class="thaiRead">${isCt ? cur.r : cur.p}</div>
+						<div class="meaning">${isCt ? cur.t : cur.c}</div>
+					</div>` : `
+					<div class="answer-placeholder">
+						<div class="reveal-text"></div>
+					</div>`}
+			</div>
+		`;
+	
+	}
 
     // 1. ผูก Event ปุ่ม Speaker
     const speakBtn = document.getElementById("cardSpeakBtn");
