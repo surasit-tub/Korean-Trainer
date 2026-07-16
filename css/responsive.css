@@ -107,8 +107,14 @@
 
 }
 
+
+
 /* Desktop */
-@media (min-width: 1025px) {
+@media 
+(orientation: landscape) 
+or ((orientation: portrait) and (min-width: 768px) )
+or (min-width: 1025px) 
+{
 
     :root{
 
